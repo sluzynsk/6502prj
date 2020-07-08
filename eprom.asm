@@ -20,7 +20,7 @@ nmi:			rti
 irq:			rti
 
 main:
-init_acia:		lda #%00001001
+init_acia:		lda #%00001011
 				sta ACIA_COMMAND
 				lda #%00011111
 				sta ACIA_CONTROL
