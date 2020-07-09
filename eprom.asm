@@ -1,9 +1,23 @@
 				.setcpu "6502"
 
+				# Peripheral ports in groups of 32 ($20)
+
+				# ACIA0 Ports start at $7f00
 				ACIA_DATA = $7f00
 				ACIA_STATUS = $7f01
 				ACIA_COMMAND = $7f02
 				ACIA_CONTROL = $7f03
+
+				# VIA0 Ports start at $7f20
+				VIA_PORTA = $7f21
+				VIA_PORTB = $7f20
+				VIA_DDRA = $7f23
+				VIA_DDRB = $7f22
+
+				# VIA Control words
+				VIA_E  = %10000000
+				VIA_RW = %01000000
+				VIA_RS = %00100000 
 
 				.segment "VECTORS"
 
