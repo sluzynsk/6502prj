@@ -1,0 +1,11 @@
+                  .include "zeropage.inc65"
+                  .include "io.inc65"
+
+                  .export nmi_handler
+                  .export irq_handler
+
+                  .code
+
+nmi_handler:      rti
+
+irq_handler:      rti

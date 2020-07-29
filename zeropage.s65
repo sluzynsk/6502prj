@@ -1,0 +1,13 @@
+		    .include "zeropage.inc65"
+
+		    .zeropage
+
+sp:		    .res 2
+sreg:		.res 2
+regsave:	.res 4
+regbank:	.res 6
+tmp1:		.res 1
+tmp2:		.res 1
+tmp3:		.res 1
+tmp4:		.res 1
+tmpstack:	.res 1
